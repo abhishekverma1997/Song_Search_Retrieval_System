@@ -1,0 +1,6 @@
+requests[socks,security]
+beautifulsoup4
+Unidecode
+boxsdk[jwt]
+stem
+fake_useragent
