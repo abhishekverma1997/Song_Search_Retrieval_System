@@ -1,0 +1,28 @@
+processedLyrics.csv
+id------------------------the song's ID
+ProcessedLyrics-----------the tokenized, stemmed, normalized lyrics
+
+processedLyrics_DlenUpdated.csv
+id------------------------the song's ID
+ProcessedLyrics-----------the tokenized, stemmed, normalized lyrics
+DocLength ----------------the length of this song
+ATTENTION: the last row is Total Lyrics Length, exclude the last row while using this file if necessary.
+
+songDict.csv
+all same as the orginal combined-csv-files.csv, except adding the song's ID at very first
+
+moodTaged.csv
+id------------------------the song's ID
+Main_mood-----------------most appeared mood
+happy---------------------times that happy word comes
+sad-----------------------times that sad word comes
+romantic------------------times that romantic word comes
+calm----------------------times that calm word comes
+ATTENTION: some mood gives same appearing times, then I tagged them all, so some songs have more than 
+one mood, and the format in csv may strange, but all followed as id coming first, and 4 mood appearing times goes the last 4.
+
+invertIndex.csv
+word----------------------each word in all lyrics
+postingList---------------a dict discribes where this word appears and appearing times(tf)
+			 key is song's ID, value is tf
+collectionFrenquency------how many times this word appears in all lyrics(cf)
